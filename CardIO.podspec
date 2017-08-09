@@ -10,8 +10,8 @@ Pod::Spec.new do |spec|
   spec.platform         = :ios, '6.1'
   spec.ios.deployment_target = '6.1'
   spec.requires_arc     = true
-  spec.source_files     = 'CardIO_Public_API/*.{h,m}'
+  spec.source_files     = '**/*.{h,m}'
   spec.frameworks       = 'Accelerate', 'AVFoundation', 'AudioToolbox', 'CoreMedia', 'CoreVideo', 'MobileCoreServices', 'OpenGLES', 'QuartzCore', 'Security', 'UIKit'
   spec.libraries        = 'c++'
-  spec.vendored_libraries = 'CardIO/libCardIO.a', 'CardIO/libopencv_core.a', 'CardIO/libopencv_imgproc.a'
+  spec.vendored_libraries = 'opencv_device/lib/*.a'
 end
